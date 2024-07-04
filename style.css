@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+    color: #333;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    width: 40vh;
+    position: relative;
+}
+
+h1 {
+    font-size: 2.3em;
+    color: #FF6F61;
+    margin: 0;
+}
+
+p {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #333;
+}
+
+.thank-you {
+    font-size: 1em;
+    color: #333;
+}
+
+.reveal-button {
+    background-color: #FF6F61;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.heart {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    color: #FF6F61;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.heart {
+    animation: float 2s ease-in-out infinite;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.card-content {
+    display: none;
+}
+
+#state-1:checked~.card-wrapper .state-1-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#state-2:checked~.card-wrapper .state-2-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.joke {
+    font-size: 0.8em;
+    color: #999;
+    margin-top: 10px;
+}
+
+.question {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.option-button {
+    background-color: #FF6F61;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    margin: 5px;
+}
